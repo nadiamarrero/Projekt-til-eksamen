@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Nadia Marrero</title>
+
+
+<!-- loading jQuery from server -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="jquery.scrollTo.js"></script>
+<!-- css stylesheet linkes her -->
+
+<link href="css_eksamen.css" rel="stylesheet">
+
+
+<!-- google font -->
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<!-- ikon oppe ved url koden (favicon) -->
+<link rel="shortcut icon" href="ikon_url.jpeg" type="image icon">
+<link rel="icon" href="ikon_url.jpeg" type="image icon">
+
+<script type="text/javascript">
+/* jQuery scroll funktion*/ 
+/*jQuery er et JavaScript bibliotek, Jquery formidler JavaScript programmeringen.
+
+/* dette er taget fra Marc(læreres) undervisning fra Github link : https://github.com/flesler/jquery.scrollTo */
+	
+$(document).ready(function () {
+
+var elem   = $('#logo');  
+    
+var bottom = $(elem).position().top+$(elem).outerHeight(true)
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > bottom) {
+            $('#scrollup').fadeIn();
+        } else {
+            $('#scrollup').fadeOut();
+        }
+    });
+
+    $('#scrollup').click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 500);
+        return false;
+    });
+	
+	
+$("#upper-nav a").click(function(e){
+			e.preventDefault();
+			$(window).scrollTo(this.hash,1000);
+			
+		});
+	
+		</script>
+<!-- Her slutter jQuery scroll -->
+</head>
+
+<!-- her indsættes header -->
+	<header>
+	
+		<div id="#">
+			<img id="logo" src="#" alt="Logo">
+		</div>
+		
+	</header>
+	<div id="upper">
+		<div id="upper-nav">
+		<nav id="navi">
+			<li><a href="index.html">Forside</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#ommig">Om mig</a></li>
+			<li><a id="kontakt01" href="#kontakt">Kontakt</a></li>
+			
+		</nav>
+		</div>
+	</div>
+	
+	<!-- Her er kodning om forsiden -->
+<div class="forsidebillede">
+
+<img id="forsidepicture" src="den_endelige_bruges_til_forsiden.jpg" alt="Forside billede" width="1440px">
+
+</div>
+
+
+
+<body>
+
+
+
+
+<footer>
+<ul>
+    <li><a href="ikoner_til_eksamen0_1.png">Facebook</a></li>
+            <li><a href="linkedin.png">LinkedIn</a></li>
+            <li><a href="e-mail.png">E-mail+</a></li>
+            
+           
+            
+            <footer>Copyright © 2017 | Website by Nadia Marrero |  </footer>
+        </ul>
+</footer>
+
+</body>
+
+	
+</html>

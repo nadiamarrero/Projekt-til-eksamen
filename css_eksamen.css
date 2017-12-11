@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body
+{
+font-family: roboto,calibri,helvetica,sans-serif;
+
+}
+/*Navigation*/
+#upper {
+	height: 55px;
+	width: 100%;
+	background-color: #DDCCA1;
+	padding-top: 9px;
+	position: absolute;
+	font-family: roboto,calibri,helvetica,sans-serif;
+
+}
+
+#upper-nav {
+	width: 100%;
+	height: 35px;
+	text-align: center;
+	padding-top: 10px;
+	background-color: #DDCCA1;
+	position: absolute;
+	outline: white solid 2px;
+
+}
+
+#navi {
+	background: #DDCCA1;
+	width: 100%;
+	height: 25px;
+	text-align: right;
+	padding-top: 4px;
+	
+
+}
+
+#navi li {
+	list-style: none;
+	display: inline;
+	padding-left:24px;
+	padding-right:24px;
+	font-family: roboto,calibri,helvetica,sans-serif;
+
+}
+
+a {
+	color: black;
+	list-style: none;
+	text-decoration: none;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+/* lavede en ny ID, da "last-child" ikke ville fungere, så jeg ændrede blot kontakt margin */
+#kontakt01{
+	margin-right: 60px;
+	
+}
+/* mouseover */	
+a:hover {
+	color:black;
+    opacity: 0.6;
+}
+
+/* selected link */
+a:active {
+     background-color: #EFF1F2;
+  transition: background-color .5s;
+}
+
+/*Navigation slut*/
+
+
+
+
+
+
+/*footer*/
+
+
+
+footer {
+	
+	
+	position: fixed;
+bottom: 0;
+width: 100%;
+background: white;
+	
+	
+	
+	text-align: center;
+	border: thick;
+}
+
+/* 
+.footer li {
+	list-style: none;
+	display: inline;
+}
+.footer {
+	
+	width: 100%;
+	color: white;
+	text-align: center;
+	padding-top: 30px;
+ position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+ 
+}
+*/ 
+
+
+/* footer slut*/
